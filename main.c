@@ -3,7 +3,10 @@
 
 int main() {
     Process processes[MAX_PROCESSES];
+    // Number of processes and time quantum for Round Robin
     int n, quantum;
+
+    // Array to store execution order for the Gantt chart
     int gantt[MAX_GANTT];
     int ganttSize;
 
@@ -27,6 +30,7 @@ int main() {
         return 1;
     }
 
+    // Run the Priority-Based Round Robin scheduler
     roundRobin(processes, n, quantum, gantt, &ganttSize);
     calculateTimes(processes, n);
 

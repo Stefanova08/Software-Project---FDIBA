@@ -9,7 +9,7 @@ typedef struct {
     int arrival;
     int burst; // Burst time: total CPU time required by the process
     int remaining; // Remaining burst time: how much CPU time the process still needs
-    int priority;
+    int priority; // Priority level (smaller number = higher priority)
     int completion;
     int turnaround; // Turnaround time = completion time - arrival time
                     // Total time the process spent in the system
