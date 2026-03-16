@@ -25,10 +25,10 @@ typedef struct {
 } Process;
 
 void inputProcesses(Process p[], int n);
-
-void priorityRoundRobin(Process processes[], int n, int quantum);
-
-void printResults(Process processes[], int n);
+void roundRobin(Process p[], int n, int quantum, int gantt[], int *ganttSize);
+void calculateTimes(Process p[], int n);
+void printGanttChart(int gantt[], int ganttSize);
+void printResults(Process p[], int n);
 
 
 #endif
