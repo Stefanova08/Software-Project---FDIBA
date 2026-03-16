@@ -9,7 +9,8 @@ typedef struct {
     int arrival;
     int burst; // Burst time: total CPU time required by the process
     int remaining; // Remaining burst time: how much CPU time the process still needs
-    int completion; 
+    int priority;
+    int completion;
     int turnaround; // Turnaround time = completion time - arrival time
                     // Total time the process spent in the system
 
@@ -24,10 +25,10 @@ typedef struct {
 } Process;
 
 void inputProcesses(Process p[], int n);
-void roundRobin(Process p[], int n, int quantum, int gantt[], int *ganttSize);
-void calculateTimes(Process p[], int n);
-void printGanttChart(int gantt[], int ganttSize);
-void printResults(Process p[], int n);
+
+void priorityRoundRobin(Process processes[], int n, int quantum);
+
+void printResults(Process processes[], int n);
 
 
 #endif
