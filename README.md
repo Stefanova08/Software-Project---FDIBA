@@ -8,5 +8,5 @@ The program models how an operating system scheduler distributes CPU time among 
 The simulation demonstrates how processes are scheduled, executed, paused, and resumed until all processes finish execution.
 
 Course Project for "Software Project"
-Faculty of Computer Systems and Technologies (FDIBA)
+FDIBA
 Technical University of Sofia
